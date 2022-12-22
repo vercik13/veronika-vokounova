@@ -1,0 +1,6 @@
+footer {
+  height: 4vh;
+  background: var(--color-bg-variant);
+  font-size: 12px;
+ text-align: center;
+}
