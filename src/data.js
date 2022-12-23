@@ -34,7 +34,7 @@ export default [
     title: 'Chytrý dům',
     github: 'https://github.com/vercik13/ukol-chytry-dum',
     demo: 'https://chytry-dum.netlify.app/',
-    text: 'React - samostatná práce v kurzu Czechitas'
+    text: 'React - Czechitas challenge '
   },
 
   {

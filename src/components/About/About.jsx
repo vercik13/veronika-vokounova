@@ -39,7 +39,7 @@ const About = () => {
           </div>
 
           
-          <p>I enjoy creating things, that live on the internet. I learn Javascript and React and also recently lounched a course that covers everything you need to build a web app using Node.js and React.</p>
+          <p>I enjoy creating things, that live on the internet. I learn Javascript, React and also recently launched a course that covers everything you need to build a web app using Node.js and React.</p>
 
         </div>
       </div>
