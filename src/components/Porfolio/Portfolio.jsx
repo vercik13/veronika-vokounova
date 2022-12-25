@@ -4,8 +4,11 @@ import './porfolio.css'
 
 
 const Portfolio = () => {
+
   return (
+
     <section id='portfolio'>
+      <div className='grids' data-aos="fade-up">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
@@ -23,11 +26,12 @@ const Portfolio = () => {
             <h4>{title}</h4>
             <div className="portfolio__item-cta">
               <a href={github} className='btn btn-secondary' target='_blank'>GitHub</a>
-              <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+              <a href={demo} className='btn btn-primary' target='_blank'>Demo</a>
             </div>
         </article>
         )
       })}
+      </div>
       </div>
     </section>
   )

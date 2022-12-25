@@ -8,12 +8,13 @@ import {SiTailwindcss} from 'react-icons/si'
 import {TbBrandJavascript} from 'react-icons/tb'
 import {FaReact} from 'react-icons/fa'
 
-import {FaNodeJs} from 'react-icons/fa'
-import {FaPython} from 'react-icons/fa'
 
 const Experience = () => {
+
   return (
+    
     <section id='experience'>
+      <div className='grids' data-aos="fade-up">
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
@@ -69,7 +70,7 @@ const Experience = () => {
         </div>
 
       </div>
-
+      </div>
     </section>
   )
 }

@@ -2,5 +2,7 @@ footer {
   height: 4vh;
   background: var(--color-bg-variant);
   font-size: 12px;
- text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

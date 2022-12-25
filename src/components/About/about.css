@@ -8,7 +8,7 @@
 .about__me {
   aspect-ratio: 1/1;
   border-radius: 2rem 0 2rem 0;
-  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+  background: transparent;
   display: inline-block;
   place-items: center;
   max-width: 200px;

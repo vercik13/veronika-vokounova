@@ -1,14 +1,19 @@
-header {
-  height: 100%;
-  padding-top: 3rem;
-  /*overflow: hidden;*/
-}
+
+
+
 
 .header__container {
+  height: 100vh;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
   text-align: center;
   position: relative;
   color: var(--color-secondary);
 }
+
 
 /* CTA */
 
@@ -29,30 +34,30 @@ header {
   gap: 0.8rem;
   position: absolute;
   left: 0;
-  bottom: 3rem;
+  /*bottom: 3rem;*/
 }
 
 .header__socials::after {
   content: '';
   width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
+  height: 5rem;
+  background: var(--color-secondary);
 }
 
-/* Image */
+/* Image 
 
 .header__foto {
   background: linear-gradient(var(--color-primary), transparent);
   width: 9rem;
   margin: 3rem auto;
-}
+}*/
 
 /* Scroll Down */
 
 .scroll__down {
   position: absolute;
   right: -2.3rem;
-  bottom: 5rem;
+  bottom: 3rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;

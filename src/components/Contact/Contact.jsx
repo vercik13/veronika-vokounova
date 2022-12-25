@@ -7,6 +7,7 @@ import {BsGithub} from 'react-icons/bs'
 const Contact = () => {
   return (
     <section id='contact'>
+      <div className='grids' data-aos="fade-up">
       <h5>Get in Touch</h5>
       <h2>Contact</h2>
       <div className="container contact__container">
@@ -26,6 +27,7 @@ const Contact = () => {
             
           </article>
         </div>
+      </div>
       </div>
     </section>
   )
