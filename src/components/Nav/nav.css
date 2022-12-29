@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Murecho&display=swap');
 
-
-
-
 nav {
-  
   font-family: 'Murecho', sans-serif;
   width: 100%;
   position: fixed;
@@ -16,7 +12,6 @@ nav {
   height: 11vh;
   z-index: 1;
 }
-
 
 nav a {
   color: var(--color-lightest-grey);
@@ -36,7 +31,6 @@ nav a {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-  
 }
 
 .nav-links a {
@@ -65,7 +59,34 @@ nav a {
   transition: 0.4s ease-in;
 }
 
+/* Header Socials */
+
+.nav__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: fixed;
+  left: 5rem;
+  bottom: 3rem;
+}
+
+.nav__socials::after {
+  content: '';
+  width: 1px;
+  height: 5rem;
+  background: var(--color-grey);
+}
+
+.nav__socials a:hover {
+  color: var(--color-bg-variant);
+}
+
 @media screen and (max-width: 768px ) {
+
+  .nav__socials {
+    display: none;
+  }
 
   body {
     overflow-x: hidden;
@@ -83,125 +104,30 @@ nav a {
     z-index: 1;
     background-color: var(--color-bg-secondary);
     flex-direction: column;
-    
     align-items: center;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
- /* Active Class */
 
+/* Active Class */
  .nav__active {
   transform: translateX(0%);
-}
+  }
+  
+  .nav__toggler {
+    display: block;
+  }
 
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
 
-
-
-.nav__toggler {
-  display: block;
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-6px, -6px);
-}
-}
-
-
-
-/*
-.nav__container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  background-color: var(--color-secondary);
-  position: fixed;
-  z-index: 2;
-}
-
-.logo {
-  margin: 1rem;
-  display: flex;
-  width: 120px;
-  padding-left: 2rem;
-  color: var(--color-bg-hover);
-  font-family: 'Megrim', cursive;
-}
-
-nav {
-  display: flex;
-  margin: auto 2rem;
-  font-family: 'Montserrat Subrayada', sans-serif;
-  transition: transform 1s ease;
-}
-
-nav a {
-  padding: 1rem;
-}
-
-nav a:hover {
-  color: var(--color-bg-variant);
-}
-
-.nav-open {
-  transform: translateX(-100%);
-}
-
-.toggle .line1 {
-  transform: rotateZ(45deg) translateY(300%);
-  background: white;
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotateZ(-45deg) translateY(-300%);
-  background: white;
-}
-
-
-
-@keyframes opening {
-  from {
+  .toggle .line2 {
     opacity: 0;
   }
 
-  to {
-    opacity: 1;
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-6px, -6px);
   }
 }
-
-
-.burger,
-.menu-check {
-  display: none;
-}
-
-@media screen and (max-width: 842px) {
-
-  .burger {
-    position: relative;
-    display: block;
-    cursor: pointer;
-  }
-
-  .burger span {
-    padding: 0.2rem 1.5rem;
-    background-color: rgb(49, 49, 49);
-    margin: 0.5rem 0rem;
-    display: block;
-    transition: all 0.5s ease;
-  }
-}
-*/

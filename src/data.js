@@ -3,10 +3,10 @@ export default [
   {
     id: 7,
     img: 'web0.jpg',
-    title: 'Responsive website',
-    github: 'https://github.com/vercik13/RiccioVerde',
-    demo: 'https://riccioverde.netlify.app/',
-    text: 'Eleventy, Sass (in progress...)'
+    title: 'Meme Generator',
+    github: 'https://github.com/vercik13/meme-generator',
+    demo: 'https://react-app-meme-generator.netlify.app/',
+    text: 'freeCodeCamp.org challenge'
   },
 
   {
@@ -21,7 +21,7 @@ export default [
   {
     id: 5,
     img: 'web5.jpg',
-    title: 'Flight Departures',
+    title: 'Flight Widget',
     github: 'https://github.com/vercik13/flight-widget',
     demo: 'https://airport-departures.netlify.app/',
     text: 'Animation, Javascript'
@@ -31,7 +31,7 @@ export default [
   {
     id: 4,
     img: 'web4.jpg',
-    title: 'Chytrý dům',
+    title: 'Widget',
     github: 'https://github.com/vercik13/ukol-chytry-dum',
     demo: 'https://chytry-dum.netlify.app/',
     text: 'React - Czechitas challenge '
@@ -52,16 +52,7 @@ export default [
     title: 'Responsive website',
     github: 'https://github.com/vercik13/PROJECT-JanKocka',
     demo: 'https://jan-kocka.cz/',
-    text: 'Eleventy, Sass, Javascript'
-  },
-
-  {
-    id: 1,
-    img: 'web1.jpg',
-    title: 'Responsive website',
-    github: 'https://github.com/vercik13/PROJEKT-Salon',
-    demo: 'http://www.diamondsalon.cz/',
-    text: 'Eleventy, Sass, Javascript'
-  },
+    text: 'Eleventy, Sass'
+  }
 
 ]
