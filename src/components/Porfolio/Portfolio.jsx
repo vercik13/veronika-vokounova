@@ -20,7 +20,8 @@ const Portfolio = () => {
           <div className="portfolio__item-img">
             <img src={img} />
             <div className="overlay">
-              <div className="text">{text}</div>
+              <div className="text">{text}
+              </div>
             </div>
           </div>
             <h4>{title}</h4>

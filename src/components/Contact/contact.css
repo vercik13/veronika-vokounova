@@ -1,55 +1,116 @@
 .contact__container {
   width: var(--container-width-xl);
+  display: grid;
+  grid-template-columns: 20% 65%;
+  gap: 13%;
+  
 }
 
 .contact__options {
-  width: 50%;
-  margin: 0 auto;
+  margin-top: 0.5rem;
+  width: 10rem;
   display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
   padding: 0 1rem;
-  justify-content: center;
 }
 
 .contact__option {
+  max-width: 10rem;
+  text-align: center;
   background: var(--color-bg-variant);
   border-radius: 0.5rem;
-  border: 1px solid transparent;
   transition: var(--transition);
   padding: 1rem;
-  margin: 0 1rem;
+}
+
+.contact__option h4 {
+  color: var(--color-white);
 }
 
 .contact__option:hover {
-    border-color: var(--color-primary-variant);
     background: var(--color-bg-hover);
 }
 
 .contact__icon {
-  color: var(--color-btn-secondary);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
 }
 
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+input, textarea {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  resize: none;
+  color: var(--color-secondary);
+  font-size: 1rem;
+  background-color: transparent;
+}
+input {
+  height: 4rem;
+}
+textarea {
+  height: 8rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  transform: var(--transition);
+}
+
+button {
+  font-size: 14px;
+  transform: var(--transition);
+}
+
+.contact__form-div {
+  position: relative;
+  margin: 0.7rem 0;
+  border: 2px solid var(--color-bg-variant);
+  
+  border-radius: 0.5rem;
+  
+  
+}
+
+.contact__form-tag {
+  position: absolute;
+  top:-1.4rem;
+  left: 1.25rem;
+  padding: 0.5rem;
+  background-color: var(--color-bg);
+  color: var(--color-bg-variant);
+}
 /* Media Query */
 
 @media screen and (max-width: 1024px) {
   .contact__container {
-    width: 80%;
+
+    width: var(--container-width-lg);
   }
 
-  .contact__options {
-    width: 60%;
- }
+
 }
 
  @media screen and (max-width: 600px) {
   .contact__container {
-    width: 90%;
+    margin-bottom: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: var(--container-width-md);
   }
 
-  .contact__options {
-    width: 90%;
- }
-
- .contact__option {
-  margin: 0 0.5rem;
+ .contact__options {
+  margin: 0 auto;
  }
 }

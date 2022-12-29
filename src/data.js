@@ -15,7 +15,7 @@ export default [
     title: 'Unit Converter',
     github: 'https://github.com/vercik13/converter',
     demo: 'https://converter-pressure.netlify.app/',
-    text: 'Unit Converter in Javascript'
+    text: 'Bootstrap, Javascript'
   },
 
   {
@@ -24,7 +24,7 @@ export default [
     title: 'Flight Departures',
     github: 'https://github.com/vercik13/flight-widget',
     demo: 'https://airport-departures.netlify.app/',
-    text: 'Flight widget in Javascript'
+    text: 'Animation, Javascript'
 
   },
 

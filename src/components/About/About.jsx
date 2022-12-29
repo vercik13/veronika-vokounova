@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import './about.css'
-import verca from '../../assets/verca-vokounova.png'
 import {FiAward} from 'react-icons/fi'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -20,7 +19,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-img">
-            <img src={verca} alt="verca-vokounova-photo" />
+          <div className='about__img'></div>
           </div>
             
         </div>
@@ -48,10 +47,10 @@ const About = () => {
           </div>
 
           
-          <p>I enjoy creating things, that live on the internet. I learn Javascript, React and also recently launched a course that covers everything you need to build a web app using Node.js and React.</p>
+          <p>I enjoy exploring and bringing the technical and visual aspects of digital products to life. I learn Javascript, React and also recently launched a course that covers everything you need to build a web app using Node.js and React.</p>
 
         </div>
-      </div>¨
+      </div>
       </div>
     </section>
 

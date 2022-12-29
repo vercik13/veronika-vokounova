@@ -1,31 +1,32 @@
 import React from 'react'
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
+import Nav from '../../components/Nav/Nav'
 import './header.css'
-import foto from '../../assets/veronika-vokounova.png'
+
 
 const Header = () => {
   return (
+    
     <header>
+      <Nav />
       <div className="container header__container">
 
         <div className="header__item">
           <HeaderSocials />
         </div>
-
-        <div className="header__item">
-          <h5>Hi, I´m</h5>
-          <h1>Veronika Vokounová</h1>
-          <h5>Junior Web Developer</h5>
-          <CTA />
+        <div className="header__flex">
+          <div className="header__content">
+            <h3>Hi, I´m</h3>
+            <h1 className='header__title'>Veronika Vokounová</h1>
+            <h2 className='header__subtitle'>Junior Web Developer</h2>
+            <CTA />
+          </div>
+          
         </div>
 
-
-     {/*<div className="header__foto" >
-          <img src={foto} alt="Veronika Vokounová - photo" />
-        </div>*/}
         <div className="header__item">
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+          <a href="#contact" className='scroll__down'>Scroll Down</a>
         </div>
       </div>
     </header>

@@ -1,10 +1,27 @@
 import React from 'react'
 import './contact.css'
-import {CgMail} from 'react-icons/cg'
+import {RiMailSendFill} from 'react-icons/ri'
 import {BsLinkedin} from 'react-icons/bs'
-import {BsGithub} from 'react-icons/bs'
+import {BsWhatsapp} from 'react-icons/bs'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_2w6ska9', 'template_9n142yn', form.current, 'pjDCVe0lHl_vehoPj')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset()
+  };
+
   return (
     <section id='contact'>
       <div className='grids' data-aos="fade-up">
@@ -13,20 +30,48 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
 
+        <a href="mailto:vero.vokounova@gmail.com" target="_blank" >
           <article className='contact__option'>
-            <a href="mailto:vero.vokounova@gmail.com" className='contact__icon'><CgMail/></a>
+             <h4 className='contact__icon'><RiMailSendFill/></h4>
+              <h4>Email</h4>
           </article>
+        </a>
 
+        <a href="https://api.whatsapp.com/send?phone=733113957" target="_blank">
           <article className='contact__option'>
-            <a href="https://www.linkedin.com/in/veronika-vokounova/" target="_blank" className='contact__icon'><BsLinkedin/></a>
-            
+            <h4 className='contact__icon'><BsWhatsapp/></h4>
+              <h4>733113957</h4>
           </article>
+        </a>
 
+        <a href="https://www.linkedin.com/in/veronika-vokounova/" target="_blank">
           <article className='contact__option'>
-            <a href="https://github.com/vercik13" target="_blank" className='contact__icon'><BsGithub/></a>
-            
+              <h4 className='contact__icon'><BsLinkedin/></h4>
+              <h4>LinkedIn</h4>
           </article>
+        </a>
         </div>
+        <form ref={form} onSubmit={sendEmail} className='contact__form'>
+          <div className="contact__form-div">
+            <label className='contact__form-tag'>Name</label>
+            <input type="text" name='name' required />
+          </div>
+            
+          <div className="contact__form-div">
+            <label className='contact__form-tag'>Email</label>
+            <input type="email" name='email' required />
+          </div>
+
+          <div className="contact__form-div">
+            <label className='contact__form-tag'>Message</label>
+            <textarea name="message"  rows="7" required></textarea>
+          </div>
+
+          <div className='submit'>
+            <button type='submit' className='btn btn-blue'>Send Message</button>
+          </div>
+          
+        </form>
       </div>
       </div>
     </section>

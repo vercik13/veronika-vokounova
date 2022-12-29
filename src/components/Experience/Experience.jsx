@@ -15,62 +15,61 @@ const Experience = () => {
     
     <section id='experience'>
       <div className='grids' data-aos="fade-up">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+        <h5>What Skills I Have</h5>
+        <h2>My Experience</h2>
 
-      <div className='container experience__container'>
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            <article className='experience__details'>
-              <AiFillHtml5 className='experience__details-icon'/>
-              <h4>HTML</h4>
+        <div className='container experience__container'>
+          <div className="experience__frontend">
+            <h3>Frontend Development</h3>
+            <div className="experience__content">
+              <article className='experience__details'>
+                <AiFillHtml5 className='experience__details-icon'/>
+                <h4>HTML</h4>
+              </article>
+
+              <article className='experience__details'>
+                <TbBrandCss3 className='experience__details-icon'/>
+                <h4>CSS</h4>
+              </article>
+
+              <article className='experience__details'>
+                <FaSass className='experience__details-icon'/>
+                <h4>Sass</h4>
+              </article>
+
               
-            </article>
 
-            <article className='experience__details'>
-              <TbBrandCss3 className='experience__details-icon'/>
-              <h4>CSS</h4>
-            </article>
+              <article className='experience__details'>
+                <TbBrandBootstrap className='experience__details-icon'/>
+                <h4>Bootstrap</h4>
+                
+              </article>
 
-            <article className='experience__details'>
-              <FaSass className='experience__details-icon'/>
-              <h4>Sass</h4>
-            </article>
+              <article className='experience__details'>
+                <SiTailwindcss className='experience__details-icon'/>
+                <h4>Tailwind</h4> 
+              </article>
 
-            
+              <article className='experience__details'>
+                <TbBrandJavascript className='experience__details-icon'/>
+                <h4>Javascript</h4>
+                
+              </article>
 
-            <article className='experience__details'>
-              <TbBrandBootstrap className='experience__details-icon'/>
-              <h4>Bootstrap</h4>
+              <article className='experience__details'>
+                <FaReact className='experience__details-icon'/>
+                <h4>React</h4>
+                
+              </article>
+
               
-            </article>
-
-            <article className='experience__details'>
-              <SiTailwindcss className='experience__details-icon'/>
-              <h4>Tailwind</h4> 
-            </article>
-
-            <article className='experience__details'>
-              <TbBrandJavascript className='experience__details-icon'/>
-              <h4>Javascript</h4>
-              
-            </article>
-
-            <article className='experience__details'>
-              <FaReact className='experience__details-icon'/>
-              <h4>React</h4>
-              
-            </article>
-
-            
 
 
+            </div>
           </div>
-        </div>
 
-      </div>
-      </div>
+        </div>
+       </div>
     </section>
   )
 }

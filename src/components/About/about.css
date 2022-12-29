@@ -1,27 +1,30 @@
 .about__container {
-  width: var(--container-width-lg);
+  width: 60%;
   display: grid;
-  grid-template-columns: 25% 70%;
+  grid-template-columns: 30% 65%;
   gap: 5%;
 }
 
-.about__me {
-  aspect-ratio: 1/1;
-  border-radius: 2rem 0 2rem 0;
-  background: transparent;
-  display: inline-block;
-  place-items: center;
-  max-width: 200px;
-  width: 100%;
+
+
+/* Image */
+
+.about__img {
+  background-image: url(../../assets/veronika-vokounova-5.png) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 240px;
+  height: 260px;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+  filter:opacity(80%);
+  transition: var(--transition);
 }
 
-.about__me-img {
-  border-radius: 2rem 0 2rem 0;
-  overflow: hidden;
-  max-width: 200px;
-  width: 100%;
+.about__img:hover {
+  filter: none;
 }
-
 
 .about__cards {
   display: grid;
@@ -41,12 +44,11 @@
 
 .about__card:hover {
   background: var(--color-bg-hover);
-  border-color: var(--color-primary-variant);
   cursor: default;
 }
 
 .about__icon {
-  color: var(--color-primary);
+  color: var(--color-white);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
@@ -57,21 +59,38 @@
 
 .about__card small {
   font-size: 0.7rem;
-  color: var(--color-light);
+  color: var(--color-white);
 }
 
 .about__content p {
-  margin: 2rem auto;
-  color: var(--color-light);
+  margin: 3rem auto;
+  color: var(--color-light-grey);
 }
 
 /* Media Query */
+@media screen and (max-width: 1350px) {
+  .about__container {
+    width: 80%;
+  }
+
+  .about__content {
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+
+
 
 @media screen and (max-width: 1024px) {
   .about__container {
     display: flex;
     flex-wrap: wrap;
     width: var(--container-width-md);
+  }
+
+  .about__content {
+    text-align: center;
+    width: 80%;
   }
 
   .about__me {
@@ -97,10 +116,6 @@
   .about__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-  }
-
-  .about__content {
-    text-align: center;
   }
 
   .about__content p {

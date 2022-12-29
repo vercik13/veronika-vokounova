@@ -1,28 +1,65 @@
 
-
-
-
 .header__container {
   height: 100vh;
   display: flex;
-
   align-items: center;
   justify-content: center;
-
-  text-align: center;
   position: relative;
-  color: var(--color-secondary);
+  color: var(--color-grey);
 }
 
+.header__flex{
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: 3.5rem;
+}
+.header__subtitle {
+  margin: 0.5rem 0;
+  position: relative;
+  padding-left: 5.4rem;
+  background: -webkit-linear-gradient(#3bbfc3, #018185);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__subtitle::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  left: 0;
+  top: 1rem;
+  background-color: var(--color-grey);
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
 
 /* CTA */
 
 .cta {
-  margin-top: 2.5rem;
+  margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   gap: 1.2rem;
-  justify-content: center;
+  
 }
 
 /* Header Socials */
@@ -32,31 +69,27 @@
   flex-direction: column;
   align-items: center;
   gap: 0.8rem;
-  position: absolute;
-  left: 0;
-  /*bottom: 3rem;*/
+  position: fixed;
+  left: 5rem;
+  bottom: 3rem;
 }
 
 .header__socials::after {
   content: '';
   width: 1px;
   height: 5rem;
-  background: var(--color-secondary);
+  background: var(--color-grey);
 }
 
-/* Image 
-
-.header__foto {
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 9rem;
-  margin: 3rem auto;
-}*/
+.header__socials:hover {
+  color: var(--color-bg-variant);
+}
 
 /* Scroll Down */
 
 .scroll__down {
   position: absolute;
-  right: -2.3rem;
+  right: -6rem;
   bottom: 3rem;
   transform: rotate(90deg);
   font-weight: 300;
@@ -66,18 +99,14 @@
 /* ===== Medie Queries ===== */ 
 
 @media screen and (max-width: 1024px) {
-  .header {
-    height: 68vh;
+  .header__flex {
+    width: 80%;
   }
 }
 
   /* ===== Medie Queries ===== */ 
 
 @media screen and (max-width: 600px) {
-  .header {
-    height: 100vh;
-  }
-
   .header__socials,
   .scroll__down {
     display: none;
