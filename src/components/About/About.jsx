@@ -47,7 +47,7 @@ const About = () => {
           </div>
 
           
-          <p>I enjoy exploring and bringing the technical and visual aspects of digital products to life. I learn Javascript, React and also recently launched a course that covers everything you need to build a web app using Node.js and React.</p>
+          <p>I enjoy exploring and bringing the technical and visual aspects of digital products to life. I'm studying Javascript, React and also recently launched a course that covers everything you need to build a web app using Node.js and React.</p>
 
         </div>
       </div>
