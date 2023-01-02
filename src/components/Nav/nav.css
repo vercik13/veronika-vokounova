@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Murecho&display=swap');
+
 
 nav {
-  font-family: 'Murecho', sans-serif;
+  text-transform: uppercase;
   width: 100%;
   position: fixed;
   background: var(--color-bg-secondary);

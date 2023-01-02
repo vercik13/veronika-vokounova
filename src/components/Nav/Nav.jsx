@@ -1,9 +1,7 @@
 import React, {useState} from 'react'
 import './nav.css'
-
 import logo from '../../assets/logo-1.png'
 import CV from '../../assets/vokounova-cv.pdf'
-
 import {BsLinkedin} from 'react-icons/bs'
 import {BsGithub} from 'react-icons/bs'
 import {SiGmail} from 'react-icons/si'
