@@ -17,6 +17,7 @@
 .header__flex{
   position: relative;
   width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -24,6 +25,7 @@
 
 .header__title {
   font-size: 3.5rem;
+  
 }
 .header__subtitle {
   margin: 0.5rem 0;
@@ -64,13 +66,8 @@
   margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  
+  gap: 1.2rem; 
 }
-
-
-
-
 
 /* Scroll Down */
 
@@ -86,8 +83,8 @@
 /* ===== Medie Queries ===== */ 
 
 @media screen and (max-width: 1024px) {
-  .header__flex {
-    width: 80%;
+  .header__title {
+    font-size: 3rem;
   }
 }
 
@@ -98,5 +95,9 @@
   .scroll__down,
   .header__socials {
     display: none;
+  }
+
+  .header__title {
+    font-size: 2.8rem;
   }
 }
