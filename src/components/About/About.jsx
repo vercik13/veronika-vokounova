@@ -28,13 +28,13 @@ const About = () => {
           <div className="about__cards">
             <article className='about__card'>
               <FiAward className='about__icon'/>
-              <h5>React</h5>
-              <small>Czechitas</small>
+              <h5>Python</h5>
+              <small>Udemy, Czechitas</small>
             </article>
 
             <article className='about__card'>
               <FiAward className='about__icon'/>
-              <h5>Javascript</h5>
+              <h5>Javascript, React</h5>
               <small>Udemy, Czechitas</small>
             </article>
 
@@ -47,7 +47,7 @@ const About = () => {
           </div>
 
           
-          <p>I enjoy exploring and bringing the technical and visual aspects of digital products to life. I'm studying Javascript, React and also recently launched a course that covers everything you need to build a web app using Node.js and React.</p>
+          <p>I enjoy exploring and bringing the technical and visual aspects of digital products to life. I'm studying Javascript, React, Python and also recently launched a course that prepares me to become a Software Tester.</p>
 
         </div>
       </div>
