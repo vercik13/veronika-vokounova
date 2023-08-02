@@ -15,7 +15,7 @@
 
 .experience__container > div:hover {
   background: var(--color-bg-hover);
-  
+
   cursor: default;
 }
 
@@ -78,6 +78,3 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
-
-
-
