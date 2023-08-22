@@ -41,13 +41,14 @@ const About = () => {
                 <small>Udemy, Czechitas</small>
               </article>
             </div>
-
-            <p>
-              I enjoy exploring and bringing the technical and visual aspects of
-              digital products to life. I'm improving my skills of React, Python
-              and also recently launched a course that prepares me to become a
-              Full Stack Developer.
-            </p>
+            <div>
+              <p>
+                I enjoy exploring and bringing the technical and visual aspects
+                of digital products to life. I'm improving my skills of React,
+                Python and also recently launched a course that prepares me to
+                become a Full Stack Developer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
