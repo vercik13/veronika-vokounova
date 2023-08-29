@@ -44,8 +44,8 @@ const About = () => {
             <div>
               <p>
                 I enjoy exploring and bringing the technical and visual aspects
-                of digital products to life. I'm improving my skills of React,
-                Python.
+                of digital products to life. I'm improving my skills of React
+                and Python.
               </p>
             </div>
           </div>
