@@ -43,11 +43,13 @@ const About = () => {
             </div>
             <div>
               <p>
-              I enjoy working at the intersection of software testing and development, where I can improve user experiences while diving into the technical aspects of applications. Over the past year and a half, I have gained practical experience as a manual tester, primarily testing web applications, particularly e-commerce platforms. At the same time, I have started learning automated testing with tools like Cypress, Puppeteer, and Playwright, and I'm excited to deepen my knowledge in this area.
+              I enjoy frontend development and software testing – I find it rewarding to help create applications that not only perform well but are also enjoyable to use.
 
-Alongside my testing career, I have also studied PHP to broaden my understanding of backend development. While I am still a junior in this field, my goal is to continue expanding my skills in both software testing and development, particularly in automation, to become a well-rounded professional in the industry.
+For over a year and a half, I have been working in manual testing of web applications, mainly e-commerce websites. I have experience in bug hunting, testing new features, and verifying that everything works as expected by users. I am also gradually learning automated testing and have basic experience with Cypress, Puppeteer, and Playwright.
 
-I am looking for opportunities where I can further develop my skills, learn from more experienced colleagues, and contribute to meaningful projects that enhance the user experience.
+In addition to testing, I enjoy frontend development. I have experience with HTML, CSS, JavaScript, and React, and I enjoy fine-tuning interfaces to ensure they make sense both visually and functionally.
+
+I am looking for opportunities where I can continue to grow, learn from more experienced colleagues, and gradually specialize in automated testing or frontend development.
               </p>
             </div>
           </div>
